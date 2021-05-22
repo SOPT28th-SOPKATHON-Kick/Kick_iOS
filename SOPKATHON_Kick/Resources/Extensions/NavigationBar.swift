@@ -19,11 +19,11 @@ class NavigationBar: UIView {
         return view
     }()
     
-    let backButton : UIButton = {
+    lazy var backButton : UIButton = {
         let btn = UIButton()
 //        btn.backgroundColor = .white
         btn.setImage(UIImage(named: "btnBack"), for: .normal)
-        btn.addTarget(self, action: #selector(goback(_:)), for: .touchUpInside)
+        btn.addTarget(self, action: #selector(gogo), for: .touchUpInside)
         return btn
     }()
     
@@ -83,8 +83,9 @@ class NavigationBar: UIView {
 
     //MARK: - 뒤로가기 관련 함수
     
-    @objc func goback(_ button: UIButton) {
-//        self.navigation
+
+    @objc func gogo()
+    {
+        
     }
-    
 }

@@ -23,7 +23,6 @@ struct PopularWriting{
         
         dataRequest.responseData { dataResponse in
             
-            dump(dataResponse)
             
             switch dataResponse.result {
             case .success:

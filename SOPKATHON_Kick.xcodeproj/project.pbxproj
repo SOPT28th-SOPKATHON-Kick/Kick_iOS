@@ -70,9 +70,9 @@
 		4040303F2659928100709B7F /* dateDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateDataModel.swift; sourceTree = "<group>"; };
 		40403044265999DE00709B7F /* countDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = countDataModel.swift; sourceTree = "<group>"; };
 		4040304726599C9B00709B7F /* PopularWritingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularWritingService.swift; sourceTree = "<group>"; };
-		4051A1C22659A674000E4BB9 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "../../../../Fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
-		4051A1C32659A674000E4BB9 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../../../../Fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
-		4051A1C42659A674000E4BB9 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "../../../../Fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		4051A1C22659A674000E4BB9 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "../../../../../../Downloads/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		4051A1C32659A674000E4BB9 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../../../../../../Downloads/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		4051A1C42659A674000E4BB9 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "../../../../../../Downloads/Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		4058242626593B5B00845A48 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		4058242A26593BAB00845A48 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		40F598E12659568F005DD065 /* HomeCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewModel.swift; sourceTree = "<group>"; };
