@@ -22,7 +22,7 @@
 
 ## 킥 구현 뷰
 
-<img width="373" alt="스크린샷 2021-05-23 오전 6 20 56" src="https://user-images.githubusercontent.com/63863135/119241161-799d4700-bb8f-11eb-9a84-ebc3cf5ac73d.png" img width="374" alt="스크린샷 2021-05-23 오전 6 21 09" src="https://user-images.githubusercontent.com/63863135/119241176-933e8e80-bb8f-11eb-8083-5ed3b5add1e9.png">
+<img width="373" alt="스크린샷 2021-05-23 오전 6 20 56" src="https://user-images.githubusercontent.com/63863135/119241161-799d4700-bb8f-11eb-9a84-ebc3cf5ac73d.png"><img width="374" alt="스크린샷 2021-05-23 오전 6 21 09" src="https://user-images.githubusercontent.com/63863135/119241176-933e8e80-bb8f-11eb-8083-5ed3b5add1e9.png">
 <img width="374" alt="스크린샷 2021-05-23 오전 6 21 20" src="https://user-images.githubusercontent.com/63863135/119241182-99346f80-bb8f-11eb-8113-364f376415bd.png">
 <img width="374" alt="스크린샷 2021-05-23 오전 6 20 45" src="https://user-images.githubusercontent.com/63863135/119241185-99cd0600-bb8f-11eb-8070-c5c42c6aa038.png">
 <img width="373" alt="스크린샷 2021-05-23 오전 6 20 12" src="https://user-images.githubusercontent.com/63863135/119241189-9afe3300-bb8f-11eb-9616-bb0d24469e4d.png">
