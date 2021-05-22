@@ -8,6 +8,8 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+//    let naviBar = NavigationBar()
 
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var scrollViewHeightConstraint: NSLayoutConstraint!
@@ -21,6 +23,11 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+//        view.addSubview(naviBar)
+
         topView.backgroundColor = .main_Color
         delegateSet()
         homeTableViewSet()
@@ -29,6 +36,20 @@ class HomeViewController: UIViewController {
         pageCtrlSet()
         getDate()
 //        getCount()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+//        navigationController?.setNavigationBarHidden(true, animated: true)
+//        tabBarController?.tabBar.isHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        
+//        navigationController?.setNavigationBarHidden(false, animated: true)
+//        tabBarController?.tabBar.isHidden = false
     }
     
     func getDate()
@@ -54,6 +75,9 @@ class HomeViewController: UIViewController {
     }
     
     func homeTableViewSet() {
+        
+        homeTableView.separatorStyle = .none
+        homeTableView.allowsSelection = false
         homeTableViewList.append(contentsOf: [
             HomeTableViewModel(title: "테스트", contents: "테ㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔ테스트", click: 32, minute: 15, like: 302),
             HomeTableViewModel(title: "테스트", contents: "테ㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔ테스트", click: 32, minute: 15, like: 302),
@@ -86,7 +110,7 @@ class HomeViewController: UIViewController {
     
     func setScrollHeight()
     {
-        scrollViewHeightConstraint.constant = CGFloat(homeTableViewList.count * 70)
+        scrollViewHeightConstraint.constant = CGFloat(homeTableViewList.count * 80)
         homeTableView.reloadData()
     }
     
@@ -127,5 +151,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.clickAndTime.text = "\(dateList[indexPath.row].timestamp)" + " 전"
         cell.like.text = "\(dateList[indexPath.row].kickCount)"
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
     }
 }
