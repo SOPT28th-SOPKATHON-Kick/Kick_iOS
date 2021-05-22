@@ -21,6 +21,13 @@
 		403917842659451100BF2C6F /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403917832659451100BF2C6F /* MyPage.storyboard */; };
 		403917872659462100BF2C6F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403917862659462100BF2C6F /* MainTabBarController.swift */; };
 		4039178E265947D200BF2C6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403917712659434900BF2C6F /* Main.storyboard */; };
+		4040303226598F5600709B7F /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040303126598F5600709B7F /* APIConstants.swift */; };
+		4040303526598FC500709B7F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040303426598FC500709B7F /* DataModel.swift */; };
+		404030382659900D00709B7F /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404030372659900D00709B7F /* NetworkResult.swift */; };
+		4040303B2659903000709B7F /* RecentWritingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040303A2659903000709B7F /* RecentWritingService.swift */; };
+		404030402659928100709B7F /* dateDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040303F2659928100709B7F /* dateDataModel.swift */; };
+		40403045265999DE00709B7F /* countDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40403044265999DE00709B7F /* countDataModel.swift */; };
+		4040304826599C9B00709B7F /* PopularWritingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040304726599C9B00709B7F /* PopularWritingService.swift */; };
 		4058242726593B5B00845A48 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4058242626593B5B00845A48 /* Login.storyboard */; };
 		4058242B26593BAB00845A48 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4058242A26593BAB00845A48 /* LoginViewController.swift */; };
 		40F598E22659568F005DD065 /* HomeCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F598E12659568F005DD065 /* HomeCollectionViewModel.swift */; };
@@ -48,6 +55,13 @@
 		403917802659450A00BF2C6F /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		403917832659451100BF2C6F /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		403917862659462100BF2C6F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		4040303126598F5600709B7F /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		4040303426598FC500709B7F /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		404030372659900D00709B7F /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		4040303A2659903000709B7F /* RecentWritingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentWritingService.swift; sourceTree = "<group>"; };
+		4040303F2659928100709B7F /* dateDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateDataModel.swift; sourceTree = "<group>"; };
+		40403044265999DE00709B7F /* countDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = countDataModel.swift; sourceTree = "<group>"; };
+		4040304726599C9B00709B7F /* PopularWritingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularWritingService.swift; sourceTree = "<group>"; };
 		4058242626593B5B00845A48 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		4058242A26593BAB00845A48 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		40F598E12659568F005DD065 /* HomeCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewModel.swift; sourceTree = "<group>"; };
@@ -100,6 +114,27 @@
 				400CFA17265932D10080CB1B /* Info.plist */,
 			);
 			path = SOPKATHON_Kick;
+			sourceTree = "<group>";
+		};
+		4040303026598F4500709B7F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4040303126598F5600709B7F /* APIConstants.swift */,
+				4040303426598FC500709B7F /* DataModel.swift */,
+				404030372659900D00709B7F /* NetworkResult.swift */,
+				4040303A2659903000709B7F /* RecentWritingService.swift */,
+				4040304726599C9B00709B7F /* PopularWritingService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		4040303E2659924500709B7F /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				4040303F2659928100709B7F /* dateDataModel.swift */,
+				40403044265999DE00709B7F /* countDataModel.swift */,
+			);
+			path = Struct;
 			sourceTree = "<group>";
 		};
 		4058241D265939C700845A48 /* Application */ = {
@@ -218,6 +253,8 @@
 		40F598E626595E65005DD065 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				4040303E2659924500709B7F /* Struct */,
+				4040303026598F4500709B7F /* API */,
 				40F598E726595E6C005DD065 /* Extension */,
 			);
 			path = Common;
@@ -370,13 +407,20 @@
 				403917752659447300BF2C6F /* WritingViewController.swift in Sources */,
 				4058242B26593BAB00845A48 /* LoginViewController.swift in Sources */,
 				40F598F626596D7B005DD065 /* HomeTableViewCell.swift in Sources */,
+				404030402659928100709B7F /* dateDataModel.swift in Sources */,
 				403917872659462100BF2C6F /* MainTabBarController.swift in Sources */,
 				40F598EF26596594005DD065 /* HomeTableViewModel.swift in Sources */,
+				4040303B2659903000709B7F /* RecentWritingService.swift in Sources */,
+				4040303526598FC500709B7F /* DataModel.swift in Sources */,
 				403917812659450A00BF2C6F /* MyPageViewController.swift in Sources */,
+				404030382659900D00709B7F /* NetworkResult.swift in Sources */,
 				400CFA0A265932CF0080CB1B /* AppDelegate.swift in Sources */,
 				40F598E22659568F005DD065 /* HomeCollectionViewModel.swift in Sources */,
+				4040303226598F5600709B7F /* APIConstants.swift in Sources */,
 				400CFA0C265932CF0080CB1B /* SceneDelegate.swift in Sources */,
+				4040304826599C9B00709B7F /* PopularWritingService.swift in Sources */,
 				4039176A2659416F00BF2C6F /* HomeViewController.swift in Sources */,
+				40403045265999DE00709B7F /* countDataModel.swift in Sources */,
 				4039177E265944D500BF2C6F /* KingViewController.swift in Sources */,
 				40F598E926595E86005DD065 /* UIColor.swift in Sources */,
 				40F598F326596C59005DD065 /* HomeCollectionViewCell.swift in Sources */,
