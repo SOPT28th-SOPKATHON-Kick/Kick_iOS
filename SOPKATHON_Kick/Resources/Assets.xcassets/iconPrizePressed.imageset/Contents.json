@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "iconPrizePressed.png",
+      "scale" : "1x",
+      "idiom" : "universal"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "iconPrizePressed@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "iconPrizePressed@3x.png",
+      "scale" : "3x",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
