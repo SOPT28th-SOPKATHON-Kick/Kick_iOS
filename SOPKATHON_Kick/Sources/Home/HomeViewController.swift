@@ -16,7 +16,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var homePageControl: UIPageControl!
     var homeCollectionViewList: [HomeCollectionViewModel] = []
     var homeTableViewList: [HomeTableViewModel] = []
-    
+    var dateList : [DateElement] = []
+//    var countList : [CountElement] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,30 @@ class HomeViewController: UIViewController {
         homeCollectionViewSet()
         setScrollHeight()
         pageCtrlSet()
+        getDate()
+//        getCount()
+    }
+    
+    func getDate()
+    {
+        RecentWriting.shared.getData { (result) in
+            switch(result)
+            {
+            case .success(let dateObject):
+                if let date = dateObject as? [DateElement]{
+                    self.dateList = date
+                    self.homeTableView.reloadData()
+                }
+            case .requestErr(_):
+                return
+            case .pathErr:
+                return
+            case .serverErr:
+                return
+            case .networkFail:
+                return
+            }
+        }
     }
     
     func homeTableViewSet() {
@@ -43,7 +68,6 @@ class HomeViewController: UIViewController {
             HomeTableViewModel(title: "테스트", contents: "테ㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔ테스트", click: 32, minute: 15, like: 302),
             HomeTableViewModel(title: "테스트", contents: "테ㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔ테스트", click: 32, minute: 15, like: 302),
             HomeTableViewModel(title: "테스트", contents: "테ㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔ테스트", click: 32, minute: 15, like: 302)
-            
         ])
     }
     
@@ -62,7 +86,7 @@ class HomeViewController: UIViewController {
     
     func setScrollHeight()
     {
-        scrollViewHeightConstraint.constant = CGFloat(homeTableViewList.count * 59)
+        scrollViewHeightConstraint.constant = CGFloat(homeTableViewList.count * 70)
         homeTableView.reloadData()
     }
     
@@ -74,7 +98,7 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return homeCollectionViewList.count
+        return dateList.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -91,17 +115,17 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return homeTableViewList.count
+        return dateList.count
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 91
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? HomeTableViewCell  else { return UITableViewCell() }
-        cell.title.text = homeTableViewList[indexPath.row].title
-        cell.content.text = homeTableViewList[indexPath.row].contents
-        cell.clickAndTime.text = "조회 " + "\(homeTableViewList[indexPath.row].click)" + "•" + "\(homeTableViewList[indexPath.row].minute)" + " 전"
-        cell.like.text = "\(homeTableViewList[indexPath.row].like)"
+        cell.title.text = dateList[indexPath.row].title
+        cell.content.text = dateList[indexPath.row].contents
+        cell.clickAndTime.text = "\(dateList[indexPath.row].timestamp)" + " 전"
+        cell.like.text = "\(dateList[indexPath.row].kickCount)"
         return cell
     }
 }
