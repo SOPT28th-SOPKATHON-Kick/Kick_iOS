@@ -135,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				403917692659416F00BF2C6F /* HomeViewController.swift */,
-				4039176D265941B000BF2C6F /* Home.storyboard */,
 				403917712659434900BF2C6F /* Main.storyboard */,
 				403917862659462100BF2C6F /* MainTabBarController.swift */,
 			);
@@ -147,6 +146,7 @@
 			children = (
 				4039177A265944CC00BF2C6F /* King.storyboard */,
 				4039177D265944D500BF2C6F /* KingViewController.swift */,
+				4039176D265941B000BF2C6F /* Home.storyboard */,
 			);
 			path = King;
 			sourceTree = "<group>";
