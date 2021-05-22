@@ -13,6 +13,7 @@
 		400CFA11265932CF0080CB1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 400CFA0F265932CF0080CB1B /* Main.storyboard */; };
 		400CFA13265932D10080CB1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 400CFA12265932D10080CB1B /* Assets.xcassets */; };
 		400CFA16265932D10080CB1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 400CFA14265932D10080CB1B /* LaunchScreen.storyboard */; };
+		5601F4C72F3894872F74A14A /* Pods_SOPKATHON_Kick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F03FBAA0C8B548BCAF5943 /* Pods_SOPKATHON_Kick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		400CFA12265932D10080CB1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		400CFA15265932D10080CB1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		400CFA17265932D10080CB1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49F03FBAA0C8B548BCAF5943 /* Pods_SOPKATHON_Kick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOPKATHON_Kick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA81244F86E24D2DAFA2C3D9 /* Pods-SOPKATHON_Kick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPKATHON_Kick.release.xcconfig"; path = "Target Support Files/Pods-SOPKATHON_Kick/Pods-SOPKATHON_Kick.release.xcconfig"; sourceTree = "<group>"; };
+		FF8A74EE6ADFCE2FEB2CB831 /* Pods-SOPKATHON_Kick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPKATHON_Kick.debug.xcconfig"; path = "Target Support Files/Pods-SOPKATHON_Kick/Pods-SOPKATHON_Kick.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5601F4C72F3894872F74A14A /* Pods_SOPKATHON_Kick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				400CFA08265932CF0080CB1B /* SOPKATHON_Kick */,
 				400CFA07265932CF0080CB1B /* Products */,
+				7476745A01D2EAECE836D67A /* Pods */,
+				7B0181038D825517EDFD4354 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = SOPKATHON_Kick;
 			sourceTree = "<group>";
 		};
+		7476745A01D2EAECE836D67A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF8A74EE6ADFCE2FEB2CB831 /* Pods-SOPKATHON_Kick.debug.xcconfig */,
+				FA81244F86E24D2DAFA2C3D9 /* Pods-SOPKATHON_Kick.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7B0181038D825517EDFD4354 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49F03FBAA0C8B548BCAF5943 /* Pods_SOPKATHON_Kick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 400CFA1A265932D10080CB1B /* Build configuration list for PBXNativeTarget "SOPKATHON_Kick" */;
 			buildPhases = (
+				A4D977573A815AAC2FB42408 /* [CP] Check Pods Manifest.lock */,
 				400CFA02265932CF0080CB1B /* Sources */,
 				400CFA03265932CF0080CB1B /* Frameworks */,
 				400CFA04265932CF0080CB1B /* Resources */,
+				E7275F3892353348E087FCC3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A4D977573A815AAC2FB42408 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SOPKATHON_Kick-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7275F3892353348E087FCC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SOPKATHON_Kick/Pods-SOPKATHON_Kick-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SOPKATHON_Kick/Pods-SOPKATHON_Kick-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SOPKATHON_Kick/Pods-SOPKATHON_Kick-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		400CFA02265932CF0080CB1B /* Sources */ = {
@@ -283,12 +352,14 @@
 		};
 		400CFA1B265932D10080CB1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF8A74EE6ADFCE2FEB2CB831 /* Pods-SOPKATHON_Kick.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3TAJ2UVSWN;
 				INFOPLIST_FILE = SOPKATHON_Kick/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +373,14 @@
 		};
 		400CFA1C265932D10080CB1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA81244F86E24D2DAFA2C3D9 /* Pods-SOPKATHON_Kick.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3TAJ2UVSWN;
 				INFOPLIST_FILE = SOPKATHON_Kick/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
