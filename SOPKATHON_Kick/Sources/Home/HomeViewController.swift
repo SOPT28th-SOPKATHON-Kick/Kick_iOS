@@ -25,6 +25,7 @@ class HomeViewController: UIViewController {
         homeTableViewSet()
         homeCollectionViewSet()
         setScrollHeight()
+        pageCtrlSet()
     }
     
     func homeTableViewSet() {
@@ -63,6 +64,10 @@ class HomeViewController: UIViewController {
     {
         scrollViewHeightConstraint.constant = CGFloat(homeTableViewList.count * 59)
         homeTableView.reloadData()
+    }
+    
+    func pageCtrlSet() {
+        homePageControl.numberOfPages = homeCollectionViewList.count
     }
 
 }
