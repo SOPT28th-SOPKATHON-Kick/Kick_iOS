@@ -15,8 +15,8 @@ class DetailViewController: UIViewController {
     
     let profileImageView : UIImageView = {
         let image = UIImageView()
-        //        image.image = UIImage(named: "")
-        image.backgroundColor = .blue
+        image.image = UIImage(named: "imgProfile")
+//        image.backgroundColor = .blue
         return image
     }()
     
@@ -38,8 +38,8 @@ class DetailViewController: UIViewController {
     
     let dotImageView : UIImageView = {
         let image = UIImageView()
-        //        image.image = UIImage(named: "")
-        image.backgroundColor = .blue
+        image.image = UIImage(named: "icDot")
+//        image.backgroundColor = .blue
         return image
     }()
     
@@ -70,15 +70,15 @@ class DetailViewController: UIViewController {
     
     let bookmarkButton : UIButton = {
         let button = UIButton()
-        button.backgroundColor = .red
-//        button.setImage(UIImage(named: ""), for: .normal)
+//        button.backgroundColor = .red
+        button.setImage(UIImage(named: "btnBookmark"), for: .normal)
         return button
     }()
     
     let kickButton : UIButton = {
         let button = UIButton()
-        button.backgroundColor = .red
-//        button.setImage(UIImage(named: ""), for: .normal)
+//        button.backgroundColor = .red
+        button.setImage(UIImage(named: "btnKick"), for: .normal)
         return button
     }()
     

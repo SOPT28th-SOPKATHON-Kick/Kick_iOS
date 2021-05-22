@@ -11,11 +11,13 @@ struct DateElement: Codable {
     let id: String
     let kickCount: Int
     let timestamp, contents, title: String
+    let before: Int
 
     enum CodingKeys: String, CodingKey {
         case id = "_id"
         case kickCount = "kick_count"
         case timestamp, contents, title
+        case before
     }
 }
 typealias Date = [DateElement]

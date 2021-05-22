@@ -38,7 +38,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="내용을 입력하세요." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wdh-ZZ-XFp">
-                                <rect key="frame" x="18" y="187.66666666666666" width="339" height="490.33333333333337"/>
+                                <rect key="frame" x="18" y="187.66666666666666" width="339" height="441.33333333333337"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -62,6 +62,8 @@
                             <constraint firstAttribute="trailing" secondItem="tPE-5X-8Ui" secondAttribute="trailing" constant="18" id="kZD-eJ-mRZ"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="iconWriteUnpressed" selectedImage="iconWritePressed" id="HGf-Nt-IFd"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="375" height="812"/>
                     <connections>
                         <outlet property="contentTextView" destination="wdh-ZZ-XFp" id="Aah-Nt-Mu0"/>
@@ -73,6 +75,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="iconWritePressed" width="31" height="50.333332061767578"/>
+        <image name="iconWriteUnpressed" width="31" height="50.333332061767578"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

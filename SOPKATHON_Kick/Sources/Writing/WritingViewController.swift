@@ -6,10 +6,17 @@
 //
 
 import UIKit
+import SnapKit
 
 class WritingViewController: UIViewController, UITextViewDelegate {
     
     let naviBar = NavigationBar()
+    
+    let bottomImageView : UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage(named: "imgBottom")
+        return image
+    }()
     
     @IBOutlet weak var contentTextView: UITextView!
     
@@ -21,6 +28,11 @@ class WritingViewController: UIViewController, UITextViewDelegate {
 //        naviBar.backButton.addTarget(self, action: #selector(goback(_:)), for: .touchUpInside)
 
         view.addSubview(naviBar)
+        view.addSubview(bottomImageView)
+        
+        bottomImageView.snp.makeConstraints { (make) in
+            make.leading.bottom.trailing.equalTo(0)
+        }
         
 
         

@@ -12,4 +12,15 @@ class HomeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var content: UILabel!
+    
+    func setData(image : UIImage,
+                 title : String,
+                 content: String)
+    {
+        self.image.image = image
+        self.title.text = title
+        self.content.text = content
+    }
 }
+
+

@@ -19,6 +19,8 @@
                         <viewLayoutGuide key="safeArea" id="BEP-k3-H2U"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="iconTagUnpressed" selectedImage="iconTagPressed" id="vHU-rw-2x6"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="73m-JS-NAP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -26,6 +28,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="iconTagPressed" width="21" height="45.5"/>
+        <image name="iconTagUnpressed" width="21" height="45.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

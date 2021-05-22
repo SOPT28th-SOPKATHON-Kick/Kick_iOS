@@ -28,7 +28,7 @@ class KingTableCell: UITableViewCell {
     
     let kingRankLabel : UILabel = {
         let label = UILabel()
-        label.text = "1"
+        label.text = "2"
         label.font = UIFont.roboto(size: 25, family: .Bold)
         label.textColor = UIColor(white: 0.0, alpha: 1.0)
         return label
@@ -36,7 +36,7 @@ class KingTableCell: UITableViewCell {
     
     let kingTitleLabel : UILabel = {
         let label = UILabel()
-        label.text = "제목제목제목제목"
+        label.text = "방귀소리 ㅋㅋㅋ"
         label.font = UIFont.roboto(size: 15, family: .Bold)
         label.textColor = UIColor(white: 0.0, alpha: 1.0)
         return label
@@ -44,7 +44,7 @@ class KingTableCell: UITableViewCell {
     
     let kingContentLabel : UILabel = {
         let label = UILabel()
-        label.text = "두줄입니다두줄입니다두줄입니다두줄입니다두줄입니다두줄입니다두줄입니다두줄입니다두줄입니다두줄"
+        label.text = "이건 ㅋㅋㅋㅋ 가족끼리라 별로 안쪽팔리는데 ㅋㅋㅋㅋㅋ 나 어릴 때 오빠랑 아빠랑 엄마랑 넷이서 한방에서 잤는데 우리 집안이 방귀소리가 좀 큰편임.. ㅋㅋㅋㅋㅋ 암튼 다 자고 나만 깨있었는데 갑자기 방귀가 나올라고 해서 다 자니깐 자신만만하게 부와아ㅏ앙아아!! 크게 꼈는데 갑자기 옆에서 오빠가 네? 하면서 일어남ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ"
         label.font = UIFont.roboto(size: 13, family: .Medium)
         label.textColor = UIColor(white: 130.0 / 255.0, alpha: 1.0)
         label.numberOfLines = 2

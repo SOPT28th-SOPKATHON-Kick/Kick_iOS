@@ -29,7 +29,7 @@ class KingHeaderView : UIView {
     
     let kingTitleLabel : UILabel = {
         let label = UILabel()
-        label.text = "제목제목제목제목"
+        label.text = "이쑤시개 끼고 도망감"
         label.font = UIFont.roboto(size: 16, family: .Bold)
         label.textColor = UIColor(white: 0.0, alpha: 1.0)
         return label
@@ -37,7 +37,7 @@ class KingHeaderView : UIView {
     
     let kingContentLabel : UILabel = {
         let label = UILabel()
-        label.text = "두줄입니다두줄입니다두줄입니다두줄입니다두줄입니다두줄입니다두줄입니다두줄입니다두줄입니다두줄"
+        label.text = "롯데백화점 식품코너에서 떡볶이 시식대가 있어 재빠른 걸음으로 가서 한입크기로 잘려진 떡에 꽂혀있는 이쑤시개를 입에 넣는 순간.. 아.. 시식용이 아니었음.. 서서 막 먹기 시작한듯한 모녀가 놀란 얼굴로 쳐다보고 난 그대로 이쑤시개를 꼽고 도망감 ㅠㅠ"
         label.font = UIFont.roboto(size: 13, family: .Medium)
         label.textColor = UIColor(white: 130.0 / 255.0, alpha: 1.0)
         label.numberOfLines = 2

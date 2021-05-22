@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a2z-qJ-wKw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a2z-qJ-wKw">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Main Tab Bar Controller-->
         <scene sceneID="WtT-LP-fpC">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rgb-W3-9VM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController storyboardIdentifier="MainTabBarController" id="a2z-qJ-wKw" customClass="MainTabBarController" customModule="SOPKATHON_Kick" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qzb-AH-L6N">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="0.42352941176470588" blue="0.42352941176470588" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="Bwa-nU-l7I" kind="relationship" relationship="viewControllers" id="tto-xP-StF"/>
@@ -24,6 +24,7 @@
                         <segue destination="Had-HR-uzx" kind="relationship" relationship="viewControllers" id="EqA-sd-riK"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rgb-W3-9VM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-703" y="-194"/>
         </scene>
@@ -31,7 +32,7 @@
         <scene sceneID="jxK-dd-vYH">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="HomeViewController" storyboardName="Home" id="Bwa-nU-l7I" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ofG-1A-uJD"/>
+                    <tabBarItem key="tabBarItem" title="" image="iconHomeUnpressed" selectedImage="iconHomePressed" id="ofG-1A-uJD"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t40-rr-aYm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,7 +42,7 @@
         <scene sceneID="IfG-jw-q3d">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="WritingViewController" storyboardName="Writing" id="YwE-xW-aLm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Gmg-ys-3kz"/>
+                    <tabBarItem key="tabBarItem" title="" image="iconWriteUnpressed" selectedImage="iconWritePressed" id="Gmg-ys-3kz"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zny-8p-hAZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,7 +52,7 @@
         <scene sceneID="V0d-ug-miT">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="KingViewController" storyboardName="King" id="4oO-Ut-NGB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ahA-k4-rfj"/>
+                    <tabBarItem key="tabBarItem" title="" image="iconPrizeUnpressed" selectedImage="iconPrizePressed" id="ahA-k4-rfj"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A2z-Mn-RbE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,11 +62,21 @@
         <scene sceneID="HGc-j5-u9j">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="MyPageViewController" storyboardName="MyPage" id="Had-HR-uzx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="VRy-W4-pBh"/>
+                    <tabBarItem key="tabBarItem" title="" image="iconTagUnpressed" selectedImage="iconTagPressed" id="VRy-W4-pBh"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MC6-tg-W3B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-299" y="207"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="iconHomePressed" width="24" height="48.5"/>
+        <image name="iconHomeUnpressed" width="24" height="48.5"/>
+        <image name="iconPrizePressed" width="31" height="47.5"/>
+        <image name="iconPrizeUnpressed" width="31" height="47.5"/>
+        <image name="iconTagPressed" width="21" height="45.5"/>
+        <image name="iconTagUnpressed" width="21" height="45.5"/>
+        <image name="iconWritePressed" width="31" height="50.5"/>
+        <image name="iconWriteUnpressed" width="31" height="50.5"/>
+    </resources>
 </document>

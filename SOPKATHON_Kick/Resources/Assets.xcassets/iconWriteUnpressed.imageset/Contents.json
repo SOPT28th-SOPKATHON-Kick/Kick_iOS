@@ -1,14 +1,14 @@
 {
   "images" : [
     {
+      "filename" : "iconWriteUnpressed.png",
       "scale" : "1x",
-      "idiom" : "universal",
-      "filename" : "iconWriteUnpressed.png"
+      "idiom" : "universal"
     },
     {
       "filename" : "iconWriteUnpressed@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x"
+      "scale" : "2x",
+      "idiom" : "universal"
     },
     {
       "idiom" : "universal",

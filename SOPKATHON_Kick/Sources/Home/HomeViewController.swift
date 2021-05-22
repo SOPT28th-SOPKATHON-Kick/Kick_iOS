@@ -104,7 +104,8 @@ class HomeViewController: UIViewController {
     
     func homeCollectionViewSet() {
         homeCollectionViewList.append(contentsOf: [
-            HomeCollectionViewModel(imageName: "", title: "테ㅔㅔ스트", contents: "테ㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔ테스트")
+            HomeCollectionViewModel(imageName: "mainBanner", title: "내가 제대로 길잃은 썰푼다", contents: "내가 고양이를 따라가다가 인생에서...")
+            
         ])
     }
     
@@ -122,14 +123,16 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dateList.count
+        return homeCollectionViewList.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? HomeCollectionViewCell  else { return UICollectionViewCell() }
-        cell.image.image = homeCollectionViewList[indexPath.row].image
-        cell.title.text = homeCollectionViewList[indexPath.row].title
-        cell.content.text = homeCollectionViewList[indexPath.row].contents
+
+        
+        cell.setData(image: homeCollectionViewList[indexPath.row].image,
+                     title: homeCollectionViewList[indexPath.row].title,
+                     content: homeCollectionViewList[indexPath.row].contents)
         
         return cell
 
@@ -148,7 +151,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? HomeTableViewCell  else { return UITableViewCell() }
         cell.title.text = dateList[indexPath.row].title
         cell.content.text = dateList[indexPath.row].contents
-        cell.clickAndTime.text = "\(dateList[indexPath.row].timestamp)" + " 전"
+        cell.clickAndTime.text = "\(dateList[indexPath.row].before)" + "분 전"
         cell.like.text = "\(dateList[indexPath.row].kickCount)"
         return cell
     }
