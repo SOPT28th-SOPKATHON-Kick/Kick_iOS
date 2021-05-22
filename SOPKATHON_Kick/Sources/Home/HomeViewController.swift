@@ -12,8 +12,6 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let header = KingHeaderView()
-        
         print("33")
         // Do any additional setup after loading the view.
     }

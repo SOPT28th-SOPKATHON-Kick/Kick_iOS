@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class KingTableCell: UITableViewCell {
     
@@ -19,10 +20,16 @@ class KingTableCell: UITableViewCell {
         return view
     }()
     
+    let crownImageView : UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage(named: "icCrown")
+        return image
+    }()
+    
     let kingRankLabel : UILabel = {
         let label = UILabel()
         label.text = "1"
-        label.font = UIFont.systemFont(ofSize: 25, weight: .bold)
+        label.font = UIFont.roboto(size: 25, family: .Bold)
         label.textColor = UIColor(white: 0.0, alpha: 1.0)
         return label
     }()
@@ -30,7 +37,7 @@ class KingTableCell: UITableViewCell {
     let kingTitleLabel : UILabel = {
         let label = UILabel()
         label.text = "제목제목제목제목"
-        label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
+        label.font = UIFont.roboto(size: 15, family: .Bold)
         label.textColor = UIColor(white: 0.0, alpha: 1.0)
         return label
     }()
@@ -38,7 +45,7 @@ class KingTableCell: UITableViewCell {
     let kingContentLabel : UILabel = {
         let label = UILabel()
         label.text = "두줄입니다두줄입니다두줄입니다두줄입니다두줄입니다두줄입니다두줄입니다두줄입니다두줄입니다두줄"
-        label.font = UIFont.systemFont(ofSize: 13, weight: .medium)
+        label.font = UIFont.roboto(size: 13, family: .Medium)
         label.textColor = UIColor(white: 130.0 / 255.0, alpha: 1.0)
         label.numberOfLines = 2
         return label
@@ -52,6 +59,7 @@ class KingTableCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
        
         addSubview(lineView)
+        addSubview(crownImageView)
         addSubview(kingRankLabel)
         addSubview(kingTitleLabel)
         addSubview(kingContentLabel)
@@ -63,6 +71,11 @@ class KingTableCell: UITableViewCell {
             make.height.equalTo(0.7)
         }
         
+        crownImageView.snp.makeConstraints { (make) in
+            make.top.equalTo(lineView.snp.bottom).offset(22.7)
+            make.leading.equalTo(19)
+        }
+
         kingRankLabel.snp.makeConstraints { (make) in
             make.top.equalTo(lineView.snp.bottom).offset(31.7)
             make.leading.equalTo(18)

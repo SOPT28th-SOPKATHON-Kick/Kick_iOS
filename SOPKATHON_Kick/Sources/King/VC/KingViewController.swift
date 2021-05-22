@@ -41,7 +41,7 @@ class KingViewController: UIViewController {
         
         kingTableView.separatorStyle = .none
         kingTableView.backgroundColor = .white
-        
+     
         configureUI()
     }
     

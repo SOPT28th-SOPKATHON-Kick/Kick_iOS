@@ -21,8 +21,8 @@ class NavigationBar: UIView {
     
     let backButton : UIButton = {
         let btn = UIButton()
-        btn.backgroundColor = .white
-        //        btn.setImage(UIImage(named: ""), for: .normal)
+//        btn.backgroundColor = .white
+        btn.setImage(UIImage(named: "btnBack"), for: .normal)
         btn.addTarget(self, action: #selector(goback(_:)), for: .touchUpInside)
         return btn
     }()
@@ -30,7 +30,7 @@ class NavigationBar: UIView {
     let navititleLabel : UILabel = {
         let label = UILabel()
         label.text = "킥 전당"
-        label.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+        label.font = UIFont.roboto(size: 18, family: .Bold)
         label.textColor = UIColor(white: 1.0, alpha: 1.0)
         return label
     }()
@@ -38,7 +38,7 @@ class NavigationBar: UIView {
     let subtitleLabel : UILabel = {
         let label = UILabel()
         label.text = "인기있는 킥 살펴보세요"
-        label.font = UIFont.systemFont(ofSize: 11, weight: .regular)
+        label.font = UIFont.roboto(size: 11, family: .Regular)
         label.textColor = UIColor(white: 1.0, alpha: 1.0)
         return label
     }()
@@ -84,7 +84,7 @@ class NavigationBar: UIView {
     //MARK: - 뒤로가기 관련 함수
     
     @objc func goback(_ button: UIButton) {
-        
+//        self.navigation
     }
     
 }
