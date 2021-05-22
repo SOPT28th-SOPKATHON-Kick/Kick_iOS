@@ -12,15 +12,12 @@
 		400CFA13265932D10080CB1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 400CFA12265932D10080CB1B /* Assets.xcassets */; };
 		400CFA16265932D10080CB1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 400CFA14265932D10080CB1B /* LaunchScreen.storyboard */; };
 		4039176A2659416F00BF2C6F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403917692659416F00BF2C6F /* HomeViewController.swift */; };
-		4039176E265941B000BF2C6F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4039176D265941B000BF2C6F /* Home.storyboard */; };
 		403917752659447300BF2C6F /* WritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403917742659447300BF2C6F /* WritingViewController.swift */; };
 		403917782659448000BF2C6F /* Writing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403917772659448000BF2C6F /* Writing.storyboard */; };
 		4039177B265944CC00BF2C6F /* King.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4039177A265944CC00BF2C6F /* King.storyboard */; };
 		4039177E265944D500BF2C6F /* KingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4039177D265944D500BF2C6F /* KingViewController.swift */; };
 		403917812659450A00BF2C6F /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403917802659450A00BF2C6F /* MyPageViewController.swift */; };
 		403917842659451100BF2C6F /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403917832659451100BF2C6F /* MyPage.storyboard */; };
-		403917872659462100BF2C6F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403917862659462100BF2C6F /* MainTabBarController.swift */; };
-		4039178E265947D200BF2C6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403917712659434900BF2C6F /* Main.storyboard */; };
 		4058242726593B5B00845A48 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4058242626593B5B00845A48 /* Login.storyboard */; };
 		4058242B26593BAB00845A48 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4058242A26593BAB00845A48 /* LoginViewController.swift */; };
 		40F598E22659568F005DD065 /* HomeCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F598E12659568F005DD065 /* HomeCollectionViewModel.swift */; };
@@ -29,6 +26,9 @@
 		40F598F326596C59005DD065 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F598F226596C59005DD065 /* HomeCollectionViewCell.swift */; };
 		40F598F626596D7B005DD065 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F598F526596D7B005DD065 /* HomeTableViewCell.swift */; };
 		5601F4C72F3894872F74A14A /* Pods_SOPKATHON_Kick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F03FBAA0C8B548BCAF5943 /* Pods_SOPKATHON_Kick.framework */; };
+		E84EBA2926599B3B00F0A2C1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EBA2826599B3B00F0A2C1 /* MainTabBarController.swift */; };
+		E84EBA2C26599B4500F0A2C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E84EBA2B26599B4500F0A2C1 /* Main.storyboard */; };
+		E84EBA3026599B7300F0A2C1 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E84EBA2F26599B7300F0A2C1 /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,15 +39,12 @@
 		400CFA15265932D10080CB1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		400CFA17265932D10080CB1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		403917692659416F00BF2C6F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		4039176D265941B000BF2C6F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		403917712659434900BF2C6F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		403917742659447300BF2C6F /* WritingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingViewController.swift; sourceTree = "<group>"; };
 		403917772659448000BF2C6F /* Writing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Writing.storyboard; sourceTree = "<group>"; };
 		4039177A265944CC00BF2C6F /* King.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = King.storyboard; sourceTree = "<group>"; };
 		4039177D265944D500BF2C6F /* KingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingViewController.swift; sourceTree = "<group>"; };
 		403917802659450A00BF2C6F /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		403917832659451100BF2C6F /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
-		403917862659462100BF2C6F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		4058242626593B5B00845A48 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		4058242A26593BAB00845A48 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		40F598E12659568F005DD065 /* HomeCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewModel.swift; sourceTree = "<group>"; };
@@ -56,6 +53,9 @@
 		40F598F226596C59005DD065 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		40F598F526596D7B005DD065 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		49F03FBAA0C8B548BCAF5943 /* Pods_SOPKATHON_Kick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOPKATHON_Kick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E84EBA2826599B3B00F0A2C1 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBarController.swift; path = MainTabBar/MainTabBarController.swift; sourceTree = "<group>"; };
+		E84EBA2B26599B4500F0A2C1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = MainTabBar/Main.storyboard; sourceTree = "<group>"; };
+		E84EBA2F26599B7300F0A2C1 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = SOPKATHON_Kick/Sources/King/Home.storyboard; sourceTree = SOURCE_ROOT; };
 		FA81244F86E24D2DAFA2C3D9 /* Pods-SOPKATHON_Kick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPKATHON_Kick.release.xcconfig"; path = "Target Support Files/Pods-SOPKATHON_Kick/Pods-SOPKATHON_Kick.release.xcconfig"; sourceTree = "<group>"; };
 		FF8A74EE6ADFCE2FEB2CB831 /* Pods-SOPKATHON_Kick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPKATHON_Kick.debug.xcconfig"; path = "Target Support Files/Pods-SOPKATHON_Kick/Pods-SOPKATHON_Kick.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,7 +149,9 @@
 				40F598E026595673005DD065 /* Model */,
 				40F598DF265954D7005DD065 /* MainTabBar */,
 				403917692659416F00BF2C6F /* HomeViewController.swift */,
-				4039176D265941B000BF2C6F /* Home.storyboard */,
+				E84EBA2B26599B4500F0A2C1 /* Main.storyboard */,
+				E84EBA2F26599B7300F0A2C1 /* Home.storyboard */,
+				E84EBA2826599B3B00F0A2C1 /* MainTabBarController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -191,8 +193,6 @@
 		40F598DF265954D7005DD065 /* MainTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				403917712659434900BF2C6F /* Main.storyboard */,
-				403917862659462100BF2C6F /* MainTabBarController.swift */,
 			);
 			path = MainTabBar;
 			sourceTree = "<group>";
@@ -310,9 +310,9 @@
 				4058242726593B5B00845A48 /* Login.storyboard in Resources */,
 				4039177B265944CC00BF2C6F /* King.storyboard in Resources */,
 				403917782659448000BF2C6F /* Writing.storyboard in Resources */,
-				4039178E265947D200BF2C6F /* Main.storyboard in Resources */,
+				E84EBA3026599B7300F0A2C1 /* Home.storyboard in Resources */,
 				403917842659451100BF2C6F /* MyPage.storyboard in Resources */,
-				4039176E265941B000BF2C6F /* Home.storyboard in Resources */,
+				E84EBA2C26599B4500F0A2C1 /* Main.storyboard in Resources */,
 				400CFA16265932D10080CB1B /* LaunchScreen.storyboard in Resources */,
 				400CFA13265932D10080CB1B /* Assets.xcassets in Resources */,
 			);
@@ -370,13 +370,13 @@
 				403917752659447300BF2C6F /* WritingViewController.swift in Sources */,
 				4058242B26593BAB00845A48 /* LoginViewController.swift in Sources */,
 				40F598F626596D7B005DD065 /* HomeTableViewCell.swift in Sources */,
-				403917872659462100BF2C6F /* MainTabBarController.swift in Sources */,
 				40F598EF26596594005DD065 /* HomeTableViewModel.swift in Sources */,
 				403917812659450A00BF2C6F /* MyPageViewController.swift in Sources */,
 				400CFA0A265932CF0080CB1B /* AppDelegate.swift in Sources */,
 				40F598E22659568F005DD065 /* HomeCollectionViewModel.swift in Sources */,
 				400CFA0C265932CF0080CB1B /* SceneDelegate.swift in Sources */,
 				4039176A2659416F00BF2C6F /* HomeViewController.swift in Sources */,
+				E84EBA2926599B3B00F0A2C1 /* MainTabBarController.swift in Sources */,
 				4039177E265944D500BF2C6F /* KingViewController.swift in Sources */,
 				40F598E926595E86005DD065 /* UIColor.swift in Sources */,
 				40F598F326596C59005DD065 /* HomeCollectionViewCell.swift in Sources */,
