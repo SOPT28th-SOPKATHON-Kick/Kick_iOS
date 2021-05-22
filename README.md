@@ -1,5 +1,6 @@
 
-
+<br>
+<br>
 # 28기 BE_SOPT_SOPKATHON_KICK
 
 1. 서비스명 : ㅋick
