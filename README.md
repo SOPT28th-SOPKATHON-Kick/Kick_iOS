@@ -30,6 +30,10 @@
 <img width="373" alt="스크린샷 2021-05-23 오전 6 20 12" src="https://user-images.githubusercontent.com/63863135/119241189-9afe3300-bb8f-11eb-9616-bb0d24469e4d.png">
 <img width="374" alt="스크린샷 2021-05-23 오전 6 20 04" src="https://user-images.githubusercontent.com/63863135/119241191-9b96c980-bb8f-11eb-8d27-fe52686f6a31.png">
 
+https://user-images.githubusercontent.com/63863135/119243163-51b5df80-bb9f-11eb-987f-c65e09a89b6a.mp4
+
+
+
 
 
 <br>
