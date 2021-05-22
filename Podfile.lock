@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (5.4.3)
   - SnapKit (5.0.1)
+  - TextFieldEffects (1.6.0)
 
 DEPENDENCIES:
   - Alamofire
   - SnapKit (~> 5.0.0)
+  - TextFieldEffects
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - SnapKit
+    - TextFieldEffects
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
 
-PODFILE CHECKSUM: c65604cc3e5a7fbc5b6938beffe290e987490480
+PODFILE CHECKSUM: 5c29a687fd7611fbe23466ea332576d4b5896495
 
 COCOAPODS: 1.10.1

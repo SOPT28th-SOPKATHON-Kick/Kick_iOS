@@ -7,24 +7,43 @@
 
 import UIKit
 
-class WritingViewController: UIViewController {
-
+class WritingViewController: UIViewController, UITextViewDelegate {
+    @IBOutlet weak var contentTextView: UITextView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("3113")
+      
 
-        // Do any additional setup after loading the view.
-    }
+        
+                self.contentTextView.delegate = self
+                contentTextView.text = "눌러서 내용을 입력해주세요."
+                contentTextView.textColor = UIColor.init(red: 196/255, green: 196/255, blue: 196/255, alpha: 1)
+
+            }
+            
+            
+            func textViewDidBeginEditing(_ textView: UITextView) {
+                if textView.textColor == UIColor.init(red: 196/255, green: 196/255, blue: 196/255, alpha: 1) {
+                    textView.text = nil
+                    textView.textColor = UIColor.black
+                }
+                
+            }
+            // TextView Place Holder
+            func textViewDidEndEditing(_ textView: UITextView) {
+                if textView.text.isEmpty {
+                    textView.text = "제가 바로 PlaceHolder입니다."
+                    textView.textColor = UIColor.lightGray
+                }
+            }
+
+    
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+
+
